@@ -17,6 +17,7 @@ import TestReport from "./components/TestReport";
 import DoctorAppointments from "./pages/DoctorPages/AppointmentsPage/DoctorAppointments";
 import LoginSignup from "./pages/Login-Signup/Login-Signup";
 import Dashboard from "./pages/DashboardPage/Dashboard";
+import PrivacyPolicy from "./pages/PrivacyPolicy/PrivacyPolicy";
 
 
 function App() {
@@ -69,6 +70,10 @@ function App() {
     {
       path:"/doctor-appointments",
       element: <DoctorAppointments />
+    },
+    {
+      path:"/privacy-policy",
+      element: <PrivacyPolicy/>
     },
 
     {
