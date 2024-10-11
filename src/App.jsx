@@ -19,7 +19,8 @@ import LoginSignup from "./pages/Login-Signup/Login-Signup";
 import Dashboard from "./pages/DashboardPage/Dashboard";
 import PrivacyPolicy from "./pages/PrivacyPolicy/PrivacyPolicy";
 import DoctorDetails from "./components/DoctorInfo";
-
+import { Toaster } from "./components/toaster"
+import AccountAction from "./pages/PrivacyPolicy/AccountAction";
 
 function App() {
 
@@ -80,6 +81,10 @@ function App() {
       path: "/doctor/:id",
       element: <DoctorDetails/>
     },
+    {
+      path: "/account-action",
+      element: <AccountAction/>
+    },
 
     {
       path: "*",
@@ -96,6 +101,7 @@ function App() {
       <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
 
       <RouterProvider router={router} />
+      <Toaster />
       </ThemeProvider>
 
       
